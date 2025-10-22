@@ -1,0 +1,10 @@
+services:
+  - type: worker
+    name: youtube-stream
+    env: docker
+    plan: free
+    envVars:
+      - key: DRIVE_FILE_ID
+        value: "YOUR_GOOGLE_DRIVE_FILE_ID"
+      - key: YOUTUBE_STREAM_KEY
+        value: "YOUR_YOUTUBE_STREAM_KEY"
